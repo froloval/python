@@ -10,6 +10,6 @@ ferst_el = int(input('Введите первый элемент '))
 step = int(input('Введите шаг '))
 mas_len = int(input('Введите количество элементов '))
 result_mas = [ferst_el]
-for i in range(mas_len):
-    result_mas.append(result_mas+[i]*step)
+for i in range(1,mas_len):
+    result_mas.append(result_mas+i*step)
 print(result_mas)
